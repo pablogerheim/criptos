@@ -5,7 +5,7 @@
 
 <h2 align="center"> Funcionalidades e demonstração </h2>
 <p> Paginação <p/>
-<p> Busca do tipo texto <p/>
+<p> Busca por nome tipo texto <p/>
 
 <h2 align="center"> Tecnologias utilizadas </h2>
 <p> Next, JS, CSS, HTML, style_components, SWR <p/>
