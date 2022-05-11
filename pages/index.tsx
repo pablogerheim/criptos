@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
-//import Image from 'next/image'
+import Image from 'next/image'
 
 const StyledDiv = styled.div`
 margin: 20px;
@@ -102,10 +102,10 @@ export function Cripto() {
     let content = newdata.map((item: any) => (
       <StyledDiv>
         <StyledDivImg>
-          <StyledImg src={item.image} />
-          {item.name}
+          <Image src={item.image} alt="image cripto" width={60} height={60}/>
+          <p style={{marginLeft:"10px"}}>{item.name}</p>
         </StyledDivImg>
-        <div >
+        <div style={{marginTop:"10px"}}>
           <StyledP >Ano da criação: <StyledPp> {item.year_established}</StyledPp></StyledP>
           <StyledP >Pais: <StyledPp> {item.country}</StyledPp></StyledP>
           <StyledP >Pontuação: <StyledPp> {item.trust_score}</StyledPp></StyledP>
